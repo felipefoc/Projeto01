@@ -27,7 +27,8 @@ Tutorial:
 3. Dentro da pasta, pelo terminal, digite `python -m venv .venv`
 4. Ative o virutalenv
 5. Instale as libs com `pip install -r requirements.txt`
-6. Execute a aplicação com `flask run`
-7. Abre seu navegador e vá para localhost:5000 e navegue pela aplicação.
+6. Adicione a variavel de ambiente utilizando `set FLASK_APP=main` se estiver utilizando o CMD ou `$env:FLASK_APP = "main"` se estiver utilizando o powershell
+7. Execute a aplicação com `flask run`
+8. Abre seu navegador e vá para localhost:5000 e navegue pela aplicação.
 
 # É isso.. boa sorte!
