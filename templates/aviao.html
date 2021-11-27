@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}
+  {{ context['titulo_da_pagina'] }}
+{% endblock %}
+
+{% block nav_title %}
+  {{ context['nome'] }}
+{% endblock %}
+
+{% block content %}
+<div class="card">
+    <div class="card-body">
+      <p class="card-text">{{ context['valor'] }}
+         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button type="button" class="btn btn-outline-primary"><a href="{{ url_for('index') }}">Voltar</a></button>
+          </div>
+      </p>
+    </div>
+    <img src="{{ context['link_imagem'] }}" class="card-img-top" alt="...">
+</div>
+{% endblock %}

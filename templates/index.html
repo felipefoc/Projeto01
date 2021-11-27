@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}Página Inicial{% endblock %}
+
+{% block nav_title %}Os 10 aviões mais caros!{% endblock %}
+
+{% block content %}
+    <!-- ListGroup -->
+    <br>
+    <ul class="list-group">
+        <li class="list-group-item"><a href="{{ url_for('top1') }}">{{ context['rank1'] }}</a></li>
+        <li class="list-group-item"><a href="{{ url_for('top2') }}">{{ context['rank2'] }}</a></li>
+        <li class="list-group-item"><a href="{{ url_for('top3') }}">{{ context['rank3'] }}</a></li>
+        <li class="list-group-item"><a href="{{ url_for('top4') }}">{{ context['rank4'] }}</a></li>
+        <li class="list-group-item"><a href="{{ url_for('top5') }}">{{ context['rank5'] }}</a></li>
+        <li class="list-group-item">...</li>
+    </ul>
+    <!-- END ListGroup -->
+{% endblock %}
